@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4f6f9;
+  color: #1e1e2e;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e1e2e;
+}
+
+.header span {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.container {
+  max-width: 850px;
+  margin: 36px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.card h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1e1e2e;
+}
+
+.form-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.form-group label {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  border: 1px solid #d0d0d0;
+  border-radius: 7px;
+  padding: 9px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  color: #1e1e2e;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #5b6af0;
+}
+
+.btn-add {
+  background-color: #5b6af0;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 9px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.btn-add:hover {
+  background-color: #4a59e0;
+}
+
+.btn-save {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 7px;
+  padding: 6px 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-save:hover {
+  background-color: #e4e4e4;
+}
+
+.btn-delete {
+  background-color: #fff0f0;
+  color: #cc3333;
+  border: 1px solid #f5c6c6;
+  border-radius: 7px;
+  padding: 6px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-delete:hover {
+  background-color: #fde0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+thead {
+  background-color: #f8f8fb;
+}
+
+th {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+td {
+  padding: 13px 14px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: #fafafa;
+}
+
+.score-input {
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: #1e1e2e;
+  width: 70px;
+  outline: none;
+}
+
+.score-input:focus {
+  border-color: #5b6af0;
+}
+
+.pass-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  background-color: #e6f9ef;
+  color: #1a8a4a;
+}
+
+.fail-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  background-color: #fdeaea;
+  color: #cc2222;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #aaa;
+  font-size: 0.88rem;
+}
+
+.stats-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 10px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 36px;
+  background-color: #e8e8e8;
+  flex-shrink: 0;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e2e;
+  margin-top: 4px;
+}
+
+.stat-passed {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a8a4a;
+  margin-top: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.76rem;
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    display: none;
+  }
+}
